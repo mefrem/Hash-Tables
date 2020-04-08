@@ -1,5 +1,26 @@
 """
 Notes from Day 1 lecture on Arrays
+What is an array and how does it work?
+* Stores a sequence of elements
+* Each element must be the same data type
+* Occupies a contiguous block of memory
+* Can access access data in constant time with
+    this equation:
+    memory_address = starting_address + index * data_size
+What is an hash function and how does it work?
+* Deterministic: For a given input, the output will
+    always be the same.
+* Defined output range: For a hash table of size 16,
+    all keys must hash to a value 0-15. For smaller
+    values, this is usually accomplished using the
+    modulo % operation.
+* Predictable Speed: Hash functions for hash tables
+    should be lightning fast while cryptographic
+    hashes (like bcrypt) should be very slow.
+* Non-invertible: You should not be able to
+reconstruct the input value from the output. This
+trait is important in cryptographic hashes but not
+necessary for general hash tables.
 """
 
 class DynamicArray:

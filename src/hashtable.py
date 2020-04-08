@@ -1,6 +1,12 @@
 # '''
 # Linked List hash table key/value pair
 # '''
+# so basically, we have an array of linked lists
+# with the linked lists containing key/value tuples?
+# and the hash function takes us from an arbitrary
+# string to a location in the array?
+
+
 class LinkedPair:
     def __init__(self, key, value):
         self.key = key
